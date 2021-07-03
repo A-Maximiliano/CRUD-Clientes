@@ -10,7 +10,7 @@
         Try
 
             If dtgClientes.SelectedItem IsNot Nothing Then
-
+                btnGuardar.Content = "MODIFICAR"
                 Dim vEstudianteSelect As clsClientes = TryCast(dtgClientes.SelectedItem, clsClientes)
                 txtNombre.Text = vEstudianteSelect.propNombre
                 txtApellido1.Text = vEstudianteSelect.propApellido1
@@ -70,6 +70,7 @@
             Limpiar()
         Else
             'agrgar bandera para cambiar leyenda del boton guardar a modificar
+
             ModificarClientes(Convert.ToInt32(txtbID.Text), txtNombre.Text, txtApellido1.Text, txtApellido2.Text, txtCedula.Text, txtTelefono.Text, txtEmail.Text, txtDireccion.Text)
             Limpiar()
         End If
@@ -79,6 +80,7 @@
     Private Sub ModificarClientes(pId As Integer, pNombre As String, pApellido1 As String, pApellido2 As String, pCedula As String, pTelefono As String, pEmail As String, pDireccion As String)
 
         dtgClientes.Items.Clear()
+        btnGuardar.Content = "GUARDAR"
         Try
             For Each itemLista In vListaClientes
 
@@ -110,6 +112,7 @@
 
             vListaClientes.Remove(vEliminarSeleccion)
 
+            btnGuardar.Content = "GUARDAR"
             Limpiar()
 
             MessageBox.Show("El cliente fue eliminado correctamente")

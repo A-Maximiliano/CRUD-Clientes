@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:CRUD_Clientes"
         mc:Ignorable="d"
-        Title="MainWindow" Height="534.237" Width="800">
+        Title="CLIENTES" Height="534.237" Width="800">
     <Grid>
         <DataGrid x:Name="dtgClientes" HorizontalAlignment="Left" Height="150" Margin="21,340,0,0" VerticalAlignment="Top" Width="746" Background="#FFCFCFCF" SelectionChanged="dtgClientes_SelectionChanged">
             <DataGrid.Columns>
