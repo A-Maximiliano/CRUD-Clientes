@@ -57,7 +57,7 @@
 
             dtgClientes.Items.Add(vRegistrarClientes)
 
-            MessageBox.Show("Cliente registrado exitosamente, clasificacion: " & vAsignarClasificacion.propNombreClasificaion)
+            MessageBox.Show("Cliente registrado exitosamente, clasificacion: " & vAsignarClasificacion.propNombreClasificaion) ' debo solucionar el metodo modificar no jala la seleccion del combo box
         Catch ex As Exception
             MessageBox.Show("Error al registrar el cliente. Error: " & ex.Message)
         End Try
@@ -93,7 +93,7 @@
                 End If
                 dtgClientes.Items.Add(itemLista)
             Next
-            MessageBox.Show("El cliente fue modificado correctamente")
+            MessageBox.Show("El cliente fue modificado correctamente, clasificacion: " & vAsignarClasificacion.propNombreClasificaion)
 
         Catch ex As Exception
             MessageBox.Show("Error al modificar el cliente. Error: " & ex.Message)
