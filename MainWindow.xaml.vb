@@ -51,13 +51,13 @@
             vRegistrarClientes.propId = vListaClientes.Count + 1
 
             ' vAsignarClasificacion.propIdClasificacion = cmbClasificacion.SelectedIndex
-            ' vAsignarClasificacion.propNombreClasificaion = cmbClasificacion.Text
+            vAsignarClasificacion.propNombreClasificaion = cmbClasificacion.Text
 
             vListaClientes.Add(vRegistrarClientes)
 
             dtgClientes.Items.Add(vRegistrarClientes)
 
-            MessageBox.Show("Cliente registrado exitosamente" & vAsignarClasificacion.propNombreClasificaion)
+            MessageBox.Show("Cliente registrado exitosamente, clasificacion: " & vAsignarClasificacion.propNombreClasificaion)
         Catch ex As Exception
             MessageBox.Show("Error al registrar el cliente. Error: " & ex.Message)
         End Try
