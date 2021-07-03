@@ -1,0 +1,17 @@
+D:\Max\UISIL\2021\II Cuatrimestre 2021\Programacion II\EXAMEN\Examen_1_Max Navarro Fdz\CRUD_Clientes\obj\Debug\CRUD_Clientes.vbprojAssemblyReference.cache
+D:\Max\UISIL\2021\II Cuatrimestre 2021\Programacion II\EXAMEN\Examen_1_Max Navarro Fdz\CRUD_Clientes\obj\Debug\MainWindow.g.vb
+D:\Max\UISIL\2021\II Cuatrimestre 2021\Programacion II\EXAMEN\Examen_1_Max Navarro Fdz\CRUD_Clientes\obj\Debug\Application.g.vb
+D:\Max\UISIL\2021\II Cuatrimestre 2021\Programacion II\EXAMEN\Examen_1_Max Navarro Fdz\CRUD_Clientes\obj\Debug\CRUD_Clientes_MarkupCompile.cache
+D:\Max\UISIL\2021\II Cuatrimestre 2021\Programacion II\EXAMEN\Examen_1_Max Navarro Fdz\CRUD_Clientes\obj\Debug\CRUD_Clientes_MarkupCompile.lref
+D:\Max\UISIL\2021\II Cuatrimestre 2021\Programacion II\EXAMEN\Examen_1_Max Navarro Fdz\CRUD_Clientes\bin\Debug\CRUD_Clientes.exe.config
+D:\Max\UISIL\2021\II Cuatrimestre 2021\Programacion II\EXAMEN\Examen_1_Max Navarro Fdz\CRUD_Clientes\bin\Debug\CRUD_Clientes.exe
+D:\Max\UISIL\2021\II Cuatrimestre 2021\Programacion II\EXAMEN\Examen_1_Max Navarro Fdz\CRUD_Clientes\bin\Debug\CRUD_Clientes.pdb
+D:\Max\UISIL\2021\II Cuatrimestre 2021\Programacion II\EXAMEN\Examen_1_Max Navarro Fdz\CRUD_Clientes\bin\Debug\CRUD_Clientes.xml
+D:\Max\UISIL\2021\II Cuatrimestre 2021\Programacion II\EXAMEN\Examen_1_Max Navarro Fdz\CRUD_Clientes\obj\Debug\MainWindow.baml
+D:\Max\UISIL\2021\II Cuatrimestre 2021\Programacion II\EXAMEN\Examen_1_Max Navarro Fdz\CRUD_Clientes\obj\Debug\CRUD_Clientes.g.resources
+D:\Max\UISIL\2021\II Cuatrimestre 2021\Programacion II\EXAMEN\Examen_1_Max Navarro Fdz\CRUD_Clientes\obj\Debug\CRUD_Clientes.Resources.resources
+D:\Max\UISIL\2021\II Cuatrimestre 2021\Programacion II\EXAMEN\Examen_1_Max Navarro Fdz\CRUD_Clientes\obj\Debug\CRUD_Clientes.vbproj.GenerateResource.cache
+D:\Max\UISIL\2021\II Cuatrimestre 2021\Programacion II\EXAMEN\Examen_1_Max Navarro Fdz\CRUD_Clientes\obj\Debug\CRUD_Clientes.vbproj.CoreCompileInputs.cache
+D:\Max\UISIL\2021\II Cuatrimestre 2021\Programacion II\EXAMEN\Examen_1_Max Navarro Fdz\CRUD_Clientes\obj\Debug\CRUD_Clientes.exe
+D:\Max\UISIL\2021\II Cuatrimestre 2021\Programacion II\EXAMEN\Examen_1_Max Navarro Fdz\CRUD_Clientes\obj\Debug\CRUD_Clientes.xml
+D:\Max\UISIL\2021\II Cuatrimestre 2021\Programacion II\EXAMEN\Examen_1_Max Navarro Fdz\CRUD_Clientes\obj\Debug\CRUD_Clientes.pdb

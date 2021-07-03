@@ -1,0 +1,62 @@
+﻿<Window x:Class="MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:CRUD_Clientes"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="534.237" Width="800">
+    <Grid>
+        <DataGrid x:Name="dtgClientes" HorizontalAlignment="Left" Height="150" Margin="21,340,0,0" VerticalAlignment="Top" Width="746" Background="#FFCFCFCF" SelectionChanged="dtgClientes_SelectionChanged">
+            <DataGrid.Columns>
+                <DataGridTextColumn Binding="{Binding Path=propId}" ClipboardContentBinding="{x:Null}" Header="Id Cliente" Width="100"/>
+                <DataGridTextColumn Binding="{Binding Path=PropNombre}" ClipboardContentBinding="{x:Null}" Header="Nombre" Width="150"/>
+                <DataGridTextColumn Binding="{Binding Path=propApellido1}" ClipboardContentBinding="{x:Null}" Header="Apellido 1" Width="150"/>
+                <DataGridTextColumn Binding="{Binding Path=propEmail}" ClipboardContentBinding="{x:Null}" Header="Correo Electronico" Width="200"/>
+
+                <DataGridTemplateColumn Width="80">
+                    <DataGridTemplateColumn.CellTemplate>
+                        <DataTemplate>
+                            <Button x:Name="btnEliminarCliente"  Click="btnEliminarCliente_Click">Eliminar</Button>
+                        </DataTemplate>
+
+                    </DataGridTemplateColumn.CellTemplate>
+                </DataGridTemplateColumn>
+
+            </DataGrid.Columns>
+        </DataGrid>
+        <Grid HorizontalAlignment="Left" Height="241" Margin="158,44,0,0" VerticalAlignment="Top" Width="499" Background="#FFCFCFCF">
+            <TextBlock x:Name="txtbID" HorizontalAlignment="Left" Margin="120,36,0,0" TextWrapping="Wrap" Text="1" VerticalAlignment="Top"/>
+            <TextBox x:Name="txtApellido1" HorizontalAlignment="Left" Height="23" Margin="362,32,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+            <TextBox x:Name="txtNombre" HorizontalAlignment="Left" Height="23" Margin="120,123,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+            <TextBox x:Name="txtCedula" HorizontalAlignment="Left" Height="23" Margin="120,73,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+            <TextBox x:Name="txtApellido2" HorizontalAlignment="Left" Height="23" Margin="362,73,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+            <TextBox x:Name="txtTelefono" HorizontalAlignment="Left" Height="23" Margin="362,112,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+            <TextBox x:Name="txtEmail" HorizontalAlignment="Left" Height="23" Margin="362,153,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+            <TextBox x:Name="txtDireccion" HorizontalAlignment="Left" Height="46" Margin="362,191,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="122"/>
+            <ComboBox x:Name="cmbClasificacion" HorizontalAlignment="Left" Margin="120,174,0,0" VerticalAlignment="Top" Width="120">
+                <ComboBoxItem Content="Platino"/>
+                <ComboBoxItem Content="Oro"/>
+                <ComboBoxItem Content="Plata"/>
+                <ComboBoxItem Content="Bronce"/>
+            </ComboBox>
+        </Grid>
+        <Label Content="MANTENIMIENTO DE CLIENTES" HorizontalAlignment="Left" Margin="258,2,0,0" VerticalAlignment="Top" Width="251" FontSize="16" FontWeight="Bold"/>
+        <Label Content="DETALLE DE CLIENTES" HorizontalAlignment="Left" Margin="287,297,0,0" VerticalAlignment="Top" Width="176" FontSize="16" FontWeight="Bold"/>
+        <Grid HorizontalAlignment="Left" Height="149" Margin="11,17,0,0" VerticalAlignment="Top" Width="140">
+            <Grid.Background>
+                <ImageBrush ImageSource="customer_person_people_man_user_client_1629.png"/>
+            </Grid.Background>
+        </Grid>
+        <Button x:Name="btnGuardar" Content="GUARDAR" HorizontalAlignment="Left" Margin="690,88,0,0" VerticalAlignment="Top" Width="84" Height="50" FontWeight="Bold"/>
+        <Label Content="Apellido 1" HorizontalAlignment="Left" Margin="434,75,0,0" VerticalAlignment="Top"/>
+        <Label HorizontalAlignment="Left" Margin="190,73,0,0" VerticalAlignment="Top" Content="Id"/>
+        <Label Content="Cedula" HorizontalAlignment="Left" Margin="190,116,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.524,2.424"/>
+        <Label Content="Nombre" HorizontalAlignment="Left" Margin="190,163,0,0" VerticalAlignment="Top"/>
+        <Label Content="Clasificacion" HorizontalAlignment="Left" Margin="190,214,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.524,2.424"/>
+        <Label Content="Apellido 2" HorizontalAlignment="Left" Margin="434,114,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.551,1.04"/>
+        <Label Content="Telefono" HorizontalAlignment="Left" Margin="434,154,0,0" VerticalAlignment="Top"/>
+        <Label Content="Email" HorizontalAlignment="Left" Margin="434,193,0,0" VerticalAlignment="Top"/>
+        <Label Content="Direccion" HorizontalAlignment="Left" Margin="434,232,0,0" VerticalAlignment="Top"/>
+    </Grid>
+</Window>
