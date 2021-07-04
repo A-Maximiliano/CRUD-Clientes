@@ -11,13 +11,20 @@
     Private Email As String
     Private Direccion As String
 
-    'Public Sub New()
-    'End Sub
-
 #End Region
 
 #Region "Constructores"
-
+    ''' <summary>
+    ''' Constructor para instanciar o inicializar todos los atributos de la clsClientes
+    ''' </summary>
+    ''' <param name="pid"></param>
+    ''' <param name="pnombre"></param>
+    ''' <param name="papellido1"></param>
+    ''' <param name="papellido2"></param>
+    ''' <param name="pcedula"></param>
+    ''' <param name="ptelefono"></param>
+    ''' <param name="pemail"></param>
+    ''' <param name="pdireccion"></param>
     Public Sub New(pid As Integer, pnombre As String, papellido1 As String, papellido2 As String, pcedula As String, ptelefono As String, pemail As String, pdireccion As String)
         Me.Id = pid
         Me.Nombre = pnombre
@@ -29,6 +36,16 @@
         Me.Direccion = pdireccion
     End Sub
 
+    ''' <summary>
+    ''' Constructor para instanciar o inicializar atributos de la clsClientes y Apellido2 = ""
+    ''' </summary>
+    ''' <param name="pid"></param>
+    ''' <param name="pnombre"></param>
+    ''' <param name="papellido1"></param>
+    ''' <param name="pcedula"></param>
+    ''' <param name="ptelefono"></param>
+    ''' <param name="pemail"></param>
+    ''' <param name="pdireccion"></param>
     Public Sub New(pid As Integer, pnombre As String, papellido1 As String, pcedula As String, ptelefono As String, pemail As String, pdireccion As String)
         Me.Id = pid
         Me.Nombre = pnombre
@@ -116,8 +133,5 @@
     End Property
 
 #End Region
-    Public Function ObtenerInfoCLiente() As String
-        Return "El nombre del cliente:  " & PropNombre & ",  " & propApellido1 & " , " & propApellido2 & ", " & propCedula & ", " & propTelefono & ", " & propEmail & ", " & propDireccion
-    End Function
 
 End Class

@@ -48,7 +48,7 @@
                 <ImageBrush ImageSource="customer_person_people_man_user_client_1629.png"/>
             </Grid.Background>
         </Grid>
-        <Button x:Name="btnGuardar" Content="GUARDAR" HorizontalAlignment="Left" Margin="690,88,0,0" VerticalAlignment="Top" Width="84" Height="50" FontWeight="Bold"/>
+        <Button x:Name="btnGuardar" Content="GUARDAR" HorizontalAlignment="Left" Margin="684,107,0,0" VerticalAlignment="Top" Width="84" Height="50" FontWeight="Bold"/>
         <Label Content="Apellido 1" HorizontalAlignment="Left" Margin="434,75,0,0" VerticalAlignment="Top"/>
         <Label HorizontalAlignment="Left" Margin="190,73,0,0" VerticalAlignment="Top" Content="Id"/>
         <Label Content="Cedula" HorizontalAlignment="Left" Margin="190,116,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.524,2.424"/>
@@ -58,5 +58,6 @@
         <Label Content="Telefono" HorizontalAlignment="Left" Margin="434,154,0,0" VerticalAlignment="Top"/>
         <Label Content="Email" HorizontalAlignment="Left" Margin="434,193,0,0" VerticalAlignment="Top"/>
         <Label Content="Direccion" HorizontalAlignment="Left" Margin="434,232,0,0" VerticalAlignment="Top"/>
+        <Button x:Name="btnNuevo" Content="Nuevo" HorizontalAlignment="Left" Margin="690,228,0,0" VerticalAlignment="Top" Width="75"/>
     </Grid>
 </Window>

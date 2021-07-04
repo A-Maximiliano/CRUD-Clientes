@@ -69,6 +69,31 @@ InitializeComponent
 Application Entry Point.
 </summary>
 </member>
+<member name="M:CRUD_Clientes.clsClientes.#ctor(System.Int32,System.String,System.String,System.String,System.String,System.String,System.String,System.String)">
+ <summary>
+ Constructor para instanciar o inicializar todos los atributos de la clsClientes
+ </summary>
+ <param name="pid"></param>
+ <param name="pnombre"></param>
+ <param name="papellido1"></param>
+ <param name="papellido2"></param>
+ <param name="pcedula"></param>
+ <param name="ptelefono"></param>
+ <param name="pemail"></param>
+ <param name="pdireccion"></param>
+</member>
+<member name="M:CRUD_Clientes.clsClientes.#ctor(System.Int32,System.String,System.String,System.String,System.String,System.String,System.String)">
+ <summary>
+ Constructor para instanciar o inicializar atributos de la clsClientes y Apellido2 = ""
+ </summary>
+ <param name="pid"></param>
+ <param name="pnombre"></param>
+ <param name="papellido1"></param>
+ <param name="pcedula"></param>
+ <param name="ptelefono"></param>
+ <param name="pemail"></param>
+ <param name="pdireccion"></param>
+</member>
 <member name="T:CRUD_Clientes.MainWindow">
 <summary>
 MainWindow
