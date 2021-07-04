@@ -5,14 +5,14 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:CRUD_Clientes"
         mc:Ignorable="d"
-        Title="CLIENTES" Height="534.237" Width="800">
+        Title="CLIENTES" Height="534.237" Width="800" WindowStartupLocation="CenterScreen">
     <Grid>
         <DataGrid x:Name="dtgClientes" HorizontalAlignment="Left" Height="150" Margin="21,340,0,0" VerticalAlignment="Top" Width="746" Background="#FFCFCFCF" SelectionChanged="dtgClientes_SelectionChanged">
             <DataGrid.Columns>
-                <DataGridTextColumn Binding="{Binding Path=propId}" ClipboardContentBinding="{x:Null}" Header="Id Cliente" Width="100"/>
-                <DataGridTextColumn Binding="{Binding Path=PropNombre}" ClipboardContentBinding="{x:Null}" Header="Nombre" Width="150"/>
-                <DataGridTextColumn Binding="{Binding Path=propApellido1}" ClipboardContentBinding="{x:Null}" Header="Apellido 1" Width="150"/>
-                <DataGridTextColumn Binding="{Binding Path=propEmail}" ClipboardContentBinding="{x:Null}" Header="Correo Electronico" Width="200"/>
+                <DataGridTextColumn Binding="{Binding Path=propId}" ClipboardContentBinding="{x:Null}" Header="Id Cliente" Width="110"/>
+                <DataGridTextColumn Binding="{Binding Path=PropNombre}" ClipboardContentBinding="{x:Null}" Header="Nombre" Width="160"/>
+                <DataGridTextColumn Binding="{Binding Path=propApellido1}" ClipboardContentBinding="{x:Null}" Header="Apellido 1" Width="160"/>
+                <DataGridTextColumn Binding="{Binding Path=propEmail}" ClipboardContentBinding="{x:Null}" Header="Correo Electronico" Width="225"/>
 
                 <DataGridTemplateColumn Width="80">
                     <DataGridTemplateColumn.CellTemplate>
@@ -25,7 +25,7 @@
 
             </DataGrid.Columns>
         </DataGrid>
-        <Grid HorizontalAlignment="Left" Height="241" Margin="158,44,0,0" VerticalAlignment="Top" Width="499" Background="#FFCFCFCF">
+        <Grid HorizontalAlignment="Left" Height="241" Margin="23,39,0,0" VerticalAlignment="Top" Width="499" Background="#FFCFCFCF">
             <TextBlock x:Name="txtbID" HorizontalAlignment="Left" Margin="120,36,0,0" TextWrapping="Wrap" Text="1" VerticalAlignment="Top"/>
             <TextBox x:Name="txtApellido1" HorizontalAlignment="Left" Height="23" Margin="362,32,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
             <TextBox x:Name="txtNombre" HorizontalAlignment="Left" Height="23" Margin="120,123,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
@@ -34,7 +34,7 @@
             <TextBox x:Name="txtTelefono" HorizontalAlignment="Left" Height="23" Margin="362,112,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
             <TextBox x:Name="txtEmail" HorizontalAlignment="Left" Height="23" Margin="362,153,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
             <TextBox x:Name="txtDireccion" HorizontalAlignment="Left" Height="46" Margin="362,191,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="122"/>
-            <ComboBox x:Name="cmbClasificacion" HorizontalAlignment="Left" Margin="120,174,0,0" VerticalAlignment="Top" Width="120">
+            <ComboBox x:Name="cmbClasificacion" HorizontalAlignment="Left" Margin="120,174,0,0" VerticalAlignment="Top" Width="120" SelectedIndex="0">
                 <ComboBoxItem Content="Platino"/>
                 <ComboBoxItem Content="Oro"/>
                 <ComboBoxItem Content="Plata"/>
@@ -42,22 +42,22 @@
             </ComboBox>
         </Grid>
         <Label Content="MANTENIMIENTO DE CLIENTES" HorizontalAlignment="Left" Margin="258,2,0,0" VerticalAlignment="Top" Width="251" FontSize="16" FontWeight="Bold"/>
-        <Label Content="DETALLE DE CLIENTES" HorizontalAlignment="Left" Margin="287,297,0,0" VerticalAlignment="Top" Width="176" FontSize="16" FontWeight="Bold"/>
-        <Grid HorizontalAlignment="Left" Height="149" Margin="11,17,0,0" VerticalAlignment="Top" Width="140">
+        <Label Content="DETALLE DE CLIENTES" HorizontalAlignment="Left" Margin="284,295,0,0" VerticalAlignment="Top" Width="176" FontSize="16" FontWeight="Bold"/>
+        <Grid HorizontalAlignment="Left" Height="109" Margin="610,33,0,0" VerticalAlignment="Top" Width="111">
             <Grid.Background>
                 <ImageBrush ImageSource="customer_person_people_man_user_client_1629.png"/>
             </Grid.Background>
         </Grid>
-        <Button x:Name="btnGuardar" Content="GUARDAR" HorizontalAlignment="Left" Margin="684,107,0,0" VerticalAlignment="Top" Width="84" Height="50" FontWeight="Bold"/>
-        <Label Content="Apellido 1" HorizontalAlignment="Left" Margin="434,75,0,0" VerticalAlignment="Top"/>
-        <Label HorizontalAlignment="Left" Margin="190,73,0,0" VerticalAlignment="Top" Content="Id"/>
-        <Label Content="Cedula" HorizontalAlignment="Left" Margin="190,116,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.524,2.424"/>
-        <Label Content="Nombre" HorizontalAlignment="Left" Margin="190,163,0,0" VerticalAlignment="Top"/>
-        <Label Content="Clasificacion" HorizontalAlignment="Left" Margin="190,214,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.524,2.424"/>
-        <Label Content="Apellido 2" HorizontalAlignment="Left" Margin="434,114,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.551,1.04"/>
-        <Label Content="Telefono" HorizontalAlignment="Left" Margin="434,154,0,0" VerticalAlignment="Top"/>
-        <Label Content="Email" HorizontalAlignment="Left" Margin="434,193,0,0" VerticalAlignment="Top"/>
-        <Label Content="Direccion" HorizontalAlignment="Left" Margin="434,232,0,0" VerticalAlignment="Top"/>
-        <Button x:Name="btnNuevo" Content="Nuevo" HorizontalAlignment="Left" Margin="690,228,0,0" VerticalAlignment="Top" Width="75"/>
+        <Button x:Name="btnGuardar" Content="GUARDAR" HorizontalAlignment="Left" Margin="560,198,0,0" VerticalAlignment="Top" Width="84" Height="50" FontWeight="Bold"/>
+        <Label Content="Apellido 1" HorizontalAlignment="Left" Margin="296,68,0,0" VerticalAlignment="Top"/>
+        <Label HorizontalAlignment="Left" Margin="52,66,0,0" VerticalAlignment="Top" Content="Id"/>
+        <Label Content="Cedula" HorizontalAlignment="Left" Margin="52,109,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.524,2.424"/>
+        <Label Content="Nombre" HorizontalAlignment="Left" Margin="52,156,0,0" VerticalAlignment="Top"/>
+        <Label Content="Clasificacion" HorizontalAlignment="Left" Margin="52,207,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.524,2.424"/>
+        <Label Content="Apellido 2" HorizontalAlignment="Left" Margin="296,107,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.551,1.04"/>
+        <Label Content="Telefono" HorizontalAlignment="Left" Margin="296,147,0,0" VerticalAlignment="Top"/>
+        <Label Content="Email" HorizontalAlignment="Left" Margin="296,186,0,0" VerticalAlignment="Top"/>
+        <Label Content="Direccion" HorizontalAlignment="Left" Margin="296,225,0,0" VerticalAlignment="Top"/>
+        <Button x:Name="btnNuevo" Content="NUEVO" HorizontalAlignment="Left" Margin="683,198,0,0" VerticalAlignment="Top" Width="84" FontWeight="Bold" Height="50"/>
     </Grid>
 </Window>

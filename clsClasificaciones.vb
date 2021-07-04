@@ -27,35 +27,14 @@
     End Property
 #End Region
 
+    ''' <summary>
+    ''' Metodo para obtener la informacion de los atributos de la clsClasificaciones
+    ''' </summary>
+    ''' <returns> Retorna el IdClasificacion y NombreClasificaion </returns>
     Public Function ObtenerInfoClasificacion() As String
-        'Return "El id de clasificacion:  " & propIdClasificacion & "   corresponde al tipo: " & propNombreClasificaion
 
-        Dim clasificacionNombre As String
-
-        Select Case clasificacionNombre
-            Case NombreClasificaion = "Platino"
-                IdClasificacion = 1
-
-            Case NombreClasificaion = "Oro"
-                IdClasificacion = 2
-
-            Case NombreClasificaion = "Plata"
-                IdClasificacion = 3
-
-            Case NombreClasificaion = "Bronce"
-                IdClasificacion = 4
-
-            Case Else
-
-        End Select
+        Return "El id de clasificacion:  " & propIdClasificacion & "   corresponde al tipo: " & propNombreClasificaion
 
     End Function
-    'Public Sub Retirar(pRetiro As Double)
-    '    If pRetiro > Me.saldo Then
-    '        Me.saldo = 0
-    '    Else
-    '        Me.saldo -= pRetiro
-    '    End If
-    'End Sub
 
 End Class

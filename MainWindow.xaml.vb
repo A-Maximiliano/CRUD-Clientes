@@ -53,6 +53,9 @@
             vRegistrarClientes.propEmail = pEmail
             vRegistrarClientes.propDireccion = pDireccion
             vRegistrarClientes.propId = vListaClientes.Count + 1
+
+            'Asigna el valor de los atributos de la clsCalsificacion segun la seleccion en el comboBox
+            vAsignarClasificacion.propIdClasificacion = cmbClasificacion.SelectedIndex
             vAsignarClasificacion.propNombreClasificaion = cmbClasificacion.Text
 
             'Agrego los clientes a la lista
@@ -60,7 +63,8 @@
             'Agrego los clientes al datagrid
             dtgClientes.Items.Add(vRegistrarClientes)
 
-            MessageBox.Show("Cliente registrado exitosamente, clasificacion: " & vAsignarClasificacion.propNombreClasificaion)
+            MessageBox.Show("El cliente fue guardado correctamente: " & vAsignarClasificacion.ObtenerInfoClasificacion)
+
         Catch ex As Exception
             MessageBox.Show("Error al registrar el cliente. Error: " & ex.Message)
         End Try
@@ -71,11 +75,18 @@
 
         'Validacion para guardar o modificar al cliente dependiendo de si selecciono un registro del datagrid
         If dtgClientes.SelectedItem Is Nothing Then
+
             GuardarClientes(txtNombre.Text, txtApellido1.Text, txtApellido2.Text, txtCedula.Text, txtTelefono.Text, txtEmail.Text, txtDireccion.Text)
+
+            'Metodo para limpiar los campos textBox
             Limpiar()
+
         Else
+
             ModificarClientes(Convert.ToInt32(txtbID.Text), txtNombre.Text, txtApellido1.Text, txtApellido2.Text, txtCedula.Text, txtTelefono.Text, txtEmail.Text, txtDireccion.Text)
+
             Limpiar()
+
         End If
 
     End Sub
@@ -100,11 +111,13 @@
                     itemLista.propDireccion = pDireccion
                 End If
                 dtgClientes.Items.Add(itemLista)
-                'Asigna el valor de la calsificacion segun la seleccion en el comboBox
+
+                'Asigna el valor de los atributos de la clsCalsificacion segun la seleccion en el comboBox
+                vAsignarClasificacion.propIdClasificacion = cmbClasificacion.SelectedIndex
                 vAsignarClasificacion.propNombreClasificaion = cmbClasificacion.Text
+
             Next
-            MessageBox.Show("El cliente fue modificado correctamente, clasificacion: " & vAsignarClasificacion.propNombreClasificaion)
-            ' MessageBox.Show("El cliente fue modificado correctamente, clasificacion: " & vAsignarClasificacion.ObtenerInfoClasificacion)
+            MessageBox.Show("El cliente fue modificado correctamente. " & vAsignarClasificacion.ObtenerInfoClasificacion)
 
         Catch ex As Exception
             MessageBox.Show("Error al modificar el cliente. Error: " & ex.Message)
@@ -118,16 +131,21 @@
         Try
 
             Dim vEliminarSeleccion As clsClientes = TryCast(dtgClientes.SelectedItem, clsClientes)
+
             'Remueve el item del data grid
             dtgClientes.Items.Remove(vEliminarSeleccion)
+
             'Remueve el item de la lista
             vListaClientes.Remove(vEliminarSeleccion)
+
             'Cambia el texto del boton
             btnGuardar.Content = "GUARDAR"
+
             'Metodo para limpiar los textBox
             Limpiar()
 
             MessageBox.Show("El cliente fue eliminado correctamente")
+
         Catch ex As Exception
             MessageBox.Show("Error al eliminar el cliente. Detalle: " + ex.Message)
         End Try
@@ -149,8 +167,13 @@
 
     'Evento del boton nuevo para limpiar los campos textbox
     Private Sub btnNuevo_Click(sender As Object, e As RoutedEventArgs) Handles btnNuevo.Click
+
+        'Metodo para limpiar los campos textBox
         Limpiar()
+
+        'Cambia el texto del boton
         btnGuardar.Content = "GUARDAR"
+
     End Sub
 
 End Class

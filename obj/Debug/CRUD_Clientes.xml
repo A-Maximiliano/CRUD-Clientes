@@ -69,6 +69,12 @@ InitializeComponent
 Application Entry Point.
 </summary>
 </member>
+<member name="M:CRUD_Clientes.clsClasificaciones.ObtenerInfoClasificacion">
+ <summary>
+ Metodo para obtener la informacion de los atributos de la clsClasificaciones
+ </summary>
+ <returns> Retorna el IdClasificacion y NombreClasificaion </returns>
+</member>
 <member name="M:CRUD_Clientes.clsClientes.#ctor(System.Int32,System.String,System.String,System.String,System.String,System.String,System.String,System.String)">
  <summary>
  Constructor para instanciar o inicializar todos los atributos de la clsClientes
